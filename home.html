@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homepage | BizzCode</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="w3.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="bizzcode.png" alt="LOGO"></a>
+				</div>
+				<div class="navbar">
+					<div class="navigation">
+						<div class="selected">
+							<a href="index.html">Home</a>
+						</div>
+						<div class="nav">
+							<a href="about.html">About</a>
+						</div>
+						<div class="nav">
+							<a href="contact.html">Contact</a>
+						</div>
+                    </div>
+                </div>
+			</div>
+			<!-Slider --->
+			<div class="raw">
+				<div class="w3-content w3-section" style="max-width:1000px">
+					<img class="mySlides" src="1.jpg" style="width:100%">
+					<img class="mySlides" src="2.jpg" style="width:100%">
+					<img class="mySlides" src="3.jpg" style="width:100%">
+				</div>
+			</div>	
+			<!-About --->
+			<div class="raw">
+                <div class="margin">
+                    <h1>About</h1>
+                    <div class="line"></div>
+                    <p>BizzCode is a creative tech startup in Bangladesh. They offer smart and competitive solutions, including world-class websites, web applications and dedicated support. They have 5 crewsand want to recruit other creativecrew.</p>
+                </divdiv>
+			</div>				
+			<!-Button --->
+			<div class="raw">
+				<div class="cta">
+			<a class="ghost-button" href="#">Start Your Project</a>
+			
+                </div>
+            </div>
+            <div class="raw">
+                <div id="footer">
+                    <ul id="links">
+                        <li>
+                            <img src="images/facebook-3-128.png"/>
+                        </li>
+                        <li>
+                            <img src="images/twitter-128.png"/>
+                        </li>
+                        <li>
+                            <img src="images/google-plus-3-128.png"/>
+                        </li>
+                    </ul>
+                    <!-- /#links -->
+                    <p class="footnote">
+                        © Copyright 2023.Company name all rights reserved
+                    </p>
+                </div>
+            </div>
+		</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500); // Change image every 2 seconds
+}
+</script>
+	</body>
+</html>
